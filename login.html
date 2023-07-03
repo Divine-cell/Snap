@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color:  #03071e;
+        font-family: 'Epilogue', sans-serif;
+        line-height: 25px;
+    }
+
+    .form {
+        margin-top: 20px; 
+       width: 400px;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 1.0rem 3.0rem ;
+       background-color: white;
+       border-radius: 20px;
+    }
+
+    h2 {
+        color: #03071e;
+        font-size: 50px;
+    }
+
+
+    .no-account {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 12px;
+        border: 2px solid #03071e;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    #login {
+        margin-top: 2.0rem;
+    }
+
+    #login input {
+        width: 400px;
+        background-color: #03071e;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #login input:hover {
+        background-color: white;
+        color: #03071e;
+        transition: 0.2s;
+    }
+
+    .alternative {
+        text-align: center;
+    }
+
+    button {
+        padding: 10px;
+        width: 150px;
+        background-color: transparent;
+        border: 1px solid black;
+        
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #google-btn {
+        border: 1px solid rgb(215, 27, 27);
+        border-radius: 5px;
+        font-size: 15px;
+        color: rgb(215, 27, 27) ;
+        
+    }
+
+    #google-btn:hover {
+        background-color:  rgb(215, 27, 27);
+        color: white;
+        transition: 0.3s;
+    }
+
+    #facebook-btn {
+        border: 1px solid rgb(35, 35, 184);
+        border-radius: 5px;
+        font-size: 15px;
+        color: rgb(35, 35, 184) ;
+
+    }
+
+    #facebook-btn:hover {
+        background-color:  rgb(35, 35, 184) ;
+        color: white;
+        transition: 0.3s;
+    }
+
+    @media screen and (max-width: 450px) {
+        body {
+            width: 100%;
+        }
+
+       .form {
+         width: 80%;
+         margin-left: 2px;
+         margin-right: 0px;
+         padding: 2.0rem;
+       }
+
+        #login input {
+            width: 100%;
+        }
+    }
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+               <h2>login</h2>
+
+               <div class="no-account">
+                <p class="no-acct">Don't have an account yet?</p> 
+                <a href="register.html">Register</a>
+               </div>
+
+               <div class="email">
+                <p>Email Address</p>
+                <input type="text" placeholder="you@exampl4.com">
+               </div>
+               
+
+               <div class="email">
+                <p>Password</p>
+                <input type="password" placeholder="enter 6 charcters or more">
+               </div>
+               
+               <div class="" id="login">
+                <input type="submit" value="login">
+               </div>
+               
+               <div class="alternative">
+                <p>or login with</p>
+             
+                <div class="btn">
+                     <button id="google-btn" onclick="myFunction()">
+                        Google
+                    </button>
+                    
+ 
+                    <button id="facebook-btn">
+                       facebook
+                    </button>
+                  </div>
+               </div>
+            </form>
+        </div>
+    </div>
+    
+<script>
+    function myFunction() {
+      location.replace("https://www.w3schools.com")
+    }
+    </script>
+    
+</body>
+</html>

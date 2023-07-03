@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap-register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #03071e;
+    }
+
+    form {
+        margin-top: 50px; 
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: white;
+       border: 2px solid #03071e;
+       margin-top: 50px;
+       border-radius: 20px;
+       padding: 0 5.0rem;
+    }
+
+    h2 {
+        font-size: 50px;
+        color: #03071e;
+        text-align: center;
+
+    }
+
+    
+
+    p {
+        font-size: 20px;
+        color: #03071e;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input {
+        padding: 12px;
+        border: 2px solid #03071e;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    #register-btn {
+        margin: 2.5rem  0;
+        width: 100%;
+        background-color: #03071e;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #register-btn:hover {
+        background-color: white;
+        color: #03071e;
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: 450px) {
+       body {
+        width: 100%;
+      
+       }
+
+       .form {
+        width: 100%;
+       
+       }
+
+
+       .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       }
+
+       input{
+        width: 90%;
+       }
+    }
+
+    @media screen and (min-width: 450px) and (max-width: 1000px) {
+        .info {
+        display: flex;
+        flex-direction: column;
+        }
+
+        input {
+            width: 90%;
+        }
+    }
+</style>
+<body>
+
+    <div class="form">
+        <form action="">
+          <h2>Register</h2>
+           
+          <div class="contact-info">
+            <p>
+                Thank you for joining us. please register by completing the information below
+            </p>
+            <div class="info">
+                <div class="name">
+                    <p>First Name</p>
+                    <input type="text" name="#" id="#">
+                </div>
+        
+                <div class="name">
+                    <p>Last Name</p>
+                    <input type="text" name="#" id="#">
+                </div>
+            </div>
+    
+            <div class="info">
+                <div class="name">
+                    <p>Email</p>
+                  <input type="email" name="" id="" placeholder="you@example.com">
+                </div>
+        
+                <div class="name">
+                    <p>Mobile</p>
+                    <input type="text" name="" id="" placeholder="+234 000 000 000">
+                </div>
+            </div>
+    
+            <div class="info">
+                <div class="name">
+                    <p>Password</p>
+                    <input type="password" name="" id="">
+                </div>
+        
+                <div class="name">
+                    <p>Confirm Password</p>
+                    <input type="password" name="" id="" >
+                </div>
+            </div>
+             
+            <input type="button" id="register-btn" value="Register">
+        </div>
+        
+    
+       
+            
+        </form>
+    </div>
+    
+</body>
+</html>
